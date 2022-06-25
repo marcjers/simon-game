@@ -16,7 +16,7 @@ $(".btn").on('click', function(event){
   checkAnswer(userClickedPattern.length-1);
 });
 
-$(document).on('keydown',function(event){
+$(document).on('keydown tap',function(event){
   if (!(started)){
     $('#level-title').text("Level " + level);
     nextSequence();
